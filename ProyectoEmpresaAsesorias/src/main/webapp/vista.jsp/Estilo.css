@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+:root {
+  font-style: 'Nunito Sans', sans-serif;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  font-family: var(font-style);
+  text-decoration: none;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+a:hover {
+  border-bottom: 1px solid white;
+}
+
+.contenedor {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caja {
+  border: 1px solid #000;
+  height: 370px;
+  width: 300px;
+  text-align: center;
+  font-family: var(font-style);
+}
+
+.caja input {
+  border: none;
+  background-color: white;
+  border-bottom: 3px solid black;
+  width: 250px;
+  font-size: 20px;
+  margin-top: 25px;
+  outline: none;
+  color: black;
+}
+
+.caja input:hover {
+  border-bottom: 3px solid #ee9b00;
+}
+
+.caja button {
+  width: 220px;
+  height: 44px;
+  background-color: #011627;
+  color: white;
+  border: none;
+  font-size: 19px;
+  border-radius: 25px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.caja button:hover {
+  background-color: #ee9b00;
+}
+
+.error {
+  border: 1px solid;
+  margin: 5px 480px;
+  padding: 10px 20px 10px 40px;
+  background: no-repeat;
+  background-position: 10px center;
+  font-size: 13px;
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  color: #d8000c;
+  background-color: #ffbaba;
+}
+
+.error2 {
+  text-align: center;
+  justify-content: center;
+  color: #e02d00;
+  font-size: 18px;
+  padding: 10px;
+  left: 10px;
+  border: 1px solid #e02d00;
+  width: 300px;
+  height: 40px;
+}
+
+.error3 {
+  color: #e02d00;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
