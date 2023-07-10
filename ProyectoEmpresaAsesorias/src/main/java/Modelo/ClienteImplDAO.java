@@ -16,7 +16,7 @@ public class ClienteImplDAO implements IclienteDAO {
 private Connection cn = null;
 
 @Override public void create(Cliente rc) { String sql =
-"INSERT INTO clientes  (nombreUsuario, rut, nombres, apellidos, telefono, afp,sistemaSalud,direccion,comuna) VALUES (?,?,?,?,?,?.?,?,?);"
+"INSERT INTO clientes  (nombreUsuario, rut, nombres, apellidos, telefono, afp, sistemaSalud, direccion, comuna) VALUES (?,?,?,?,?,?,?,?,?);"
 ; try { cn = Conexion.getConn(); PreparedStatement ppStm =
 cn.prepareStatement(sql); ppStm.setString(1, rc.getNombreUsuario());
 ppStm.setString(2, rc.getRut()); ppStm.setString(3,

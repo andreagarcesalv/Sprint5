@@ -36,7 +36,7 @@ public class CrearCapacitacion extends HttpServlet {
 	    c.setLugar(request.getParameter("lugar"));
 	    c.setDuracion(request.getParameter("duracion"));
 	    int asistentes = Integer.parseInt(request.getParameter("asistentes"));
-	    c.setCatidadAsistentes(asistentes);;
+	    c.setCatidadAsistentes(asistentes);
 	    
 	    cap.create(c);
 	    

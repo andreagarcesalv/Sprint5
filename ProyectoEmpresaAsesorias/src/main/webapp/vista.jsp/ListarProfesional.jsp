@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     
     
-    <%@ page import="Modelo.Cliente" %>
+    <%@ page import="Modelo.Profesional" %>
     <%@ page import="java.util.ArrayList" %>
     
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
 <%@ include file="Estilo.css" %>
 </style>
 
-<title>Lista Cliente</title>
+<title>Lista Profesional</title>
 </head>
 <body>
 
@@ -23,7 +23,7 @@
 <%@ include file="Menu2.jsp" %>
 
 <div class="container mt-4 ">
-<a class="btn btn-primary" href="EditarCliente" role="button">Agregar Usuario Cliente</a>
+<a class="btn btn-primary" href="CrearCliente" role="button">Agregar Usuario Cliente</a>
 <a class="btn btn-primary" href="CrearProfesional" role="button">Agregar Usuario Profesional</a>
 <a class="btn btn-primary" href="CrearAdministrativo" role="button">Agregar Usuario Administrativo</a>
 	<table class="table" >
@@ -32,33 +32,23 @@
 			<th>Usuario</th>
 			<th>Email</th>
 			<th>Contraseña</th>
-			<th>Nombres</th>
-			<th>Apellidos</th>
-			<th>Telefono</th>
-			<th>AFP</th>
-			<th>Sistema de Salud</th>
-			<th>Direccion</th>
-			<th>Comuna</th>
+			<th>titulo</th>
+			<th>fechaIngreso</th>
 		</tr>
 		
 		</thead>
-		
+	
 		<tbody>
 		<%
-		ArrayList<Cliente> rc = (ArrayList<Cliente>)request.getAttribute("a");
-		for(Cliente c: rc){
+		ArrayList<Profesional> rp = (ArrayList<Profesional>)request.getAttribute("u");
+		for(Profesional c: rp){
 		%>
 		 <tr class="text-center">
-		 	<td><%=c.getNombreUsuario()%></td>
-		 	<td><%=c.getEmail() %></td>
+			<td><%= c.getNombreUsuario() %></td>
+		 	<td><%= c.getEmail() %></td>
 		 	<td><%= c.getContrasenia() %></td>
-			<td><%=c.getNombres() %></td>
-		 	<td><%=c.getApellidos() %></td>
-		 	<td><%= c.getTelefono() %></td>
-			<td><%= c.getAfp() %></td>
-		 	<td><%= c.getSistemaSalud()%></td>
-		 	<td><%= c.getDireccion() %></td>
-			<td><%= c.getComuna() %></td>
+		 	<td><%= c.getTitulo() %></td>
+		 	<td><%= c.getFechaIngreso() %></td>
 		 	
 		 </tr>
 		

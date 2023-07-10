@@ -19,8 +19,12 @@
 <div class="container">
     <div class="card">
         <div class="card-body">
-            <h2 class="card-title">Crear Usuario - Profesional</h2>
-            <form action="Registro" method="post">
+            <h2 class="card-title">Editar Usuario - Profesional</h2>
+            <form action="CrearAdministrativo" method="post">
+            
+		
+		
+            <input type="hidden" name="proId" value="${form}" />
                 <div class="form-group">
                     <label for="nombreUsuario"><i class="fa-solid fa-user"></i> Nombre Usuario</label>
                     <input class="form-control" id="nombreUsuario" type="text" name="nombreUsuario" required placeholder="Ingrese Rut de Cliente">

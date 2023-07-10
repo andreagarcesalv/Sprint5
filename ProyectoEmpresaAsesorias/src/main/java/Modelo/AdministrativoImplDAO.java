@@ -64,7 +64,7 @@ public class AdministrativoImplDAO implements IadministrativoDAO {
 	@Override
 	public void update(Administrativo ra) {
 		
-		String query = "UPDATE administrativos SET nombreUsuario= ?, email = ?, contrasenia = ?, area = ?, experiencia = ? WHERE idadministrativos = ?;";
+		String query = "UPDATE administrativos SET nombreUsuario= ?, email = ?, contrasenia = ?, area = ?, experiencia = ? WHERE id = ?;";
 		try {
 			cn=Conexion.getConn();
 			

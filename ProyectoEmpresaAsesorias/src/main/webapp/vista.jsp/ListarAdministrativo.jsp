@@ -40,7 +40,7 @@
 		
 		<tbody>
 		<%
-		ArrayList<Administrativo> ru = (ArrayList<Administrativo>)request.getAttribute("cl");
+		ArrayList<Administrativo> ru = (ArrayList<Administrativo>)request.getAttribute("u");
 		for(Administrativo c: ru){
 		%>
 		 <tr class="text-center">

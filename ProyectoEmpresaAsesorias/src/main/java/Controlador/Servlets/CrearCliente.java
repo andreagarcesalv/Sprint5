@@ -32,8 +32,8 @@ public class CrearCliente extends HttpServlet {
 		ClienteImplDAO cap = new ClienteImplDAO();
 	    Cliente rc = new Cliente();
 		
-	    int id = Integer.parseInt(request.getParameter("id"));
-	    rc.setId(id);
+	    /*int id = Integer.parseInt(request.getParameter("id"));
+	    rc.setId(id);*/
 		rc.setNombreUsuario(request.getParameter("nombreUsuario"));
 		rc.setEmail(request.getParameter("email"));
 		rc.setContrasenia(request.getParameter("contrasenia"));
@@ -50,7 +50,7 @@ public class CrearCliente extends HttpServlet {
 	    
 	    cap.create(rc);
 	    
-	    RequestDispatcher dispatcher = request.getRequestDispatcher("ListarClientes");
+	    RequestDispatcher dispatcher = request.getRequestDispatcher("ListarCliente");
 	    dispatcher.include(request, response);
 		
 		

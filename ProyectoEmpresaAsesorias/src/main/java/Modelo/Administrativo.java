@@ -12,7 +12,12 @@ public class Administrativo extends RegistroUsuario{
 		this.experienciaPrevia = experienciaPrevia;
 	}
 	
-	
+	public Administrativo(String nombreUsuario, String email, String contrasenia, String area,
+			String experienciaPrevia) {
+		super(nombreUsuario, email, contrasenia);
+		this.area = area;
+		this.experienciaPrevia = experienciaPrevia;
+	}
 	public Administrativo(int id, String nombreUsuario, String email, String contrasenia, String area,
 			String experienciaPrevia) {
 		super(id, nombreUsuario, email, contrasenia);

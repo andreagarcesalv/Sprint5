@@ -10,4 +10,5 @@ public interface IprofesionalDAO {
 	List<Profesional> readAll();
 	public void delete (int id);
 	public void update (Profesional rp);
+	
 }

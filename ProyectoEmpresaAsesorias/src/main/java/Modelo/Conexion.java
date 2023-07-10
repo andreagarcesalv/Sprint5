@@ -17,7 +17,7 @@ public class Conexion {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				
 				// Creamos la conexión
-				cnx = DriverManager.getConnection("jdbc:mysql://localhost:3306/prevencion_riesgos","root","Floki123.");
+				cnx = DriverManager.getConnection("jdbc:mysql://localhost:3306/prevencion_riesgos","root","And1995*");
 				
 				// Verificamos que conn se establezca
 				if(cnx!=null) {

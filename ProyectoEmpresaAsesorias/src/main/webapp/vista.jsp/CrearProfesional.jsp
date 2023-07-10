@@ -20,7 +20,7 @@
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Crear Usuario - Profesional</h2>
-            <form action="Registro" method="post">
+            <form action="CrearProfesional" method="post">
                 <div class="form-group">
                     <label for="rut"><i class="fa-solid fa-user"></i> Rut:</label>
                     <input class="form-control" id="rut" type="text" name="rut" required placeholder="Ingrese Rut de Cliente">
@@ -42,8 +42,8 @@
                     <input class="form-control" id="titulo" type="text" name="titulo" required placeholder="Ingrese su Titulo Profesional">
                 </div>
                 <div class="form-group">
-                    <label for="fechaIngreso"><i class="fa-solid fa-key"></i> Fecha de Ingreso</label>
-                    <input class="form-control" type="text" name="fechaIngreso" id="fechaIngreso" required placeholder="Ingrese su Fecha de Ingreso">
+                    <label for="ingreso"><i class="fa-solid fa-key"></i> Fecha de Ingreso</label>
+                    <input class="form-control" type="text" name="ingreso" id="ingreso" required placeholder="Ingrese su Fecha de Ingreso">
                 </div>
                 <button type="submit" class="btn btn-primary">Registrar</button>
             </form>

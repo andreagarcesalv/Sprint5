@@ -56,6 +56,12 @@
             <li><a class="dropdown-item" href="CrearAdministrativo">Crear usuario tipo Administrativo</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="ListarUsuarios">Listar Usuarios</a></li>
+            <li><hr class="dropdown-divider"></li>        
+            <li><a class="dropdown-item" href="ListarProfesional">Listar Profesional</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="ListarAdministrativo">Listar Administrativo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="ListarCliente">Listar Clientes</a></li>
             <li><hr class="dropdown-divider"></li>            
           </ul>
         </li>

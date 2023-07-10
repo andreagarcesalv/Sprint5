@@ -20,7 +20,7 @@
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Crear Usuario - Cliente</h2>
-            <form action="Registro" method="post">
+            <form action="CrearCliente" method="post">
                 <div class="form-group">
                     <label for="rut"><i class="fa-solid fa-user"></i> Rut:</label>
                     <input class="form-control" id="rut" type="text" name="rut" required placeholder="Ingrese Rut de Cliente">

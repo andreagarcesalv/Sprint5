@@ -31,19 +31,19 @@ public class CrearProfesional extends HttpServlet {
 		ProfesionalImplDAO cap = new ProfesionalImplDAO();
 	    Profesional rp = new Profesional();
 		
-	    int id = Integer.parseInt(request.getParameter("id"));
-	    rp.setId(id);
+	    /*int id = Integer.parseInt(request.getParameter("id"));
+	    rp.setId(id);*/
 		rp.setNombreUsuario(request.getParameter("nombreUsuario"));
 		rp.setEmail(request.getParameter("email"));
 		rp.setContrasenia(request.getParameter("contrasenia"));
 		rp.setTitulo(request.getParameter("titulo"));
-		rp.setFechaIngreso(request.getParameter("Ingreso"));
+		rp.setFechaIngreso(request.getParameter("ingreso"));
 		
 		
 	    
 	    cap.create(rp);
 	    
-	    RequestDispatcher dispatcher = request.getRequestDispatcher("ListarClientes");
+	    RequestDispatcher dispatcher = request.getRequestDispatcher("ListarProfesional");
 	    dispatcher.include(request, response);
 		
 		doGet(request, response);
